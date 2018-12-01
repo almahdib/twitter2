@@ -17,7 +17,7 @@ public void configureRepositoryRestConfiguration(RepositoryRestConfiguration rep
 		repo.exposeIdsFor(Tweet.class);
 		repo.getCorsRegistry()
 		.addMapping("/**")
-		.allowedOrigins("http://localhost:4200/")
+		.allowedOrigins("*")
 		.allowedHeaders("*")
 		.allowedMethods("OPTION","HEAD","GET","POST","PATCH");
 		

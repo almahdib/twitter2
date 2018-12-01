@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Tweet {
@@ -20,7 +22,18 @@ public class Tweet {
 	private String tweet;
 	private Date creation_date;
 	private String username;
-	//private ArrayList<String> hashtags = new ArrayList<>();
+	
+	@ManyToOne
+	@JoinColumn(name = "SearchedWord_id")
+	private SearchedWord word;
+	
+	
+	public SearchedWord getWord() {
+		return word;
+	}
+	public void setWord(SearchedWord word) {
+		this.word = word;
+	}
 	public Tweet(String user_id, String tweet, Date creation_date, String username) {
 		super();
 		this.user_id = user_id;

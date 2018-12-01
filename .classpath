@@ -28,6 +28,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/Nouveau dossier (2)/TwitterSentimentalAnalysis/twitter4j-core-4.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MAHDI/Desktop/Nouveau dossier/TwitterSentimentalAnalysis/twitter4j-core-4.0.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
